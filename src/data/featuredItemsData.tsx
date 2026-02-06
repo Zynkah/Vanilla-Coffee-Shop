@@ -1,0 +1,58 @@
+export const FeaturedItemsData = [
+  {
+    id: 1,
+    imageSrc: "/vanilla.jpg",
+    imageAlt: "Vanilla 1",
+    productName: "Vanilla Extract 1",
+    price: "$15",
+  },
+  {
+    id: 2,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "Coffee 1",
+    productName: "Coffee Extract 21",
+    price: "$15",
+  },
+  {
+    id: 3,
+    imageSrc: "/vanilla.jpg",
+    imageAlt: "Vanilla 3",
+    productName: "Vanilla Extract 3",
+    price: "$15",
+  },
+  {
+    id: 4,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "Coffee 2",
+    productName: "Coffee Extract 2",
+    price: "$15",
+  },
+  {
+    id: 5,
+    imageSrc: "/vanilla.jpg",
+    imageAlt: "Vanilla 5",
+    productName: "Vanilla Extract 5",
+    price: "$15",
+  },
+  {
+    id: 6,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "Coffee 5",
+    productName: "Coffee Extract 5",
+    price: "$15",
+  },
+  {
+    id: 7,
+    imageSrc: "/vanilla.jpg",
+    imageAlt: "Vanilla 7",
+    productName: "Vanilla Extract 7",
+    price: "$15",
+  },
+  {
+    id: 8,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "Coffee 8",
+    productName: "Coffee Extract 8",
+    price: "$15",
+  },
+];

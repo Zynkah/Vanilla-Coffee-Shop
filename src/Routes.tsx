@@ -4,6 +4,7 @@ import { VanillaPage } from "./pages/vanilla";
 import { CoffeePage } from "./pages/coffee";
 import { AboutPage } from "./pages/about";
 import { ContactPage } from "./pages/contact";
+import { CartPage } from "./pages/cart";
 
 export const RouteList = () => {
   return (
@@ -13,6 +14,7 @@ export const RouteList = () => {
       <Route path="/coffee" element={<CoffeePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/cart" element={<CartPage />} />
     </Routes>
   );
 };

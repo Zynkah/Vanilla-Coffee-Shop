@@ -1,0 +1,58 @@
+export const CoffeeData = [
+  {
+    id: 1,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "coffee 1",
+    productName: "Coffee Extract 1",
+    price: "$15",
+  },
+  {
+    id: 2,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "coffee 2",
+    productName: "Coffee Extract 2",
+    price: "$15",
+  },
+  {
+    id: 3,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "coffee 3",
+    productName: "Coffee Extract 3",
+    price: "$15",
+  },
+  {
+    id: 4,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "coffee 4",
+    productName: "Coffee Extract 4",
+    price: "$15",
+  },
+  {
+    id: 5,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "coffee 5",
+    productName: "Coffee Extract 5",
+    price: "$15",
+  },
+  {
+    id: 6,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "coffee 6",
+    productName: "Coffee Extract 6",
+    price: "$15",
+  },
+  {
+    id: 7,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "coffee 7",
+    productName: "Coffee Extract 7",
+    price: "$15",
+  },
+  {
+    id: 8,
+    imageSrc: "/coffee.jpg",
+    imageAlt: "coffee 8",
+    productName: "Coffee Extract 8",
+    price: "$15",
+  },
+];

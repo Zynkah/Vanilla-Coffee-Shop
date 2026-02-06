@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const SPageWrapper = styled.div`
-  width: 100%;
-  max-width: 1600px;
-  postion: relative;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`;
+
+export const SProductsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px;
 `;

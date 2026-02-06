@@ -1,20 +1,28 @@
-import styled from "styled-components";
 import { Card } from "../../components/card";
-import { SPageWrapper } from "../../styles";
-
-export const SProductsWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 16px;
-`;
+import { SPageWrapper, SProductsWrapper } from "../../styles";
+import { VanillaData } from "../../data/vanillaData";
+import { useCartStore } from "../../store/cartStore";
 
 export const VanillaPage = () => {
+  const addToCart = useCartStore((state) => state.addToCart);
+
+  const handleAddToCart = (item: any) => {
+    addToCart(item);
+  };
+
   return (
     <SPageWrapper>
       <h1>VANILLA PAGE</h1>
       <SProductsWrapper>
-        {Array.from({ length: 8 }).map((_, index) => (
-          <Card key={index} />
+        {VanillaData.map((product) => (
+          <Card
+            key={product.id}
+            imageSrc={product.imageSrc}
+            imageAlt={product.imageAlt}
+            productName={product.productName}
+            price={product.price}
+            onAddToCart={() => handleAddToCart(product)}
+          />
         ))}
       </SProductsWrapper>
     </SPageWrapper>

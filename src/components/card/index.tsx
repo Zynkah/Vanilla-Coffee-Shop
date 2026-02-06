@@ -1,10 +1,42 @@
-import { SCardFooter, SCardImage, SCardWrapper } from "./styles";
+import {
+  SCardFooter,
+  SCardHeartBanner,
+  SCardImage,
+  SCardWrapper,
+} from "./styles";
+import cartIcon from "../../assets/cart.svg";
+import heartIcon from "../../assets/heart.svg";
 
-export const Card = () => {
+interface CardProps {
+  imageSrc: string;
+  imageAlt: string;
+  productName: string;
+  price: string;
+  onAddToCart?: () => void;
+}
+
+export const Card = ({
+  imageSrc,
+  imageAlt,
+  productName,
+  price,
+  onAddToCart,
+}: CardProps) => {
   return (
     <SCardWrapper>
-      <SCardImage src="/vanilla.jpg" alt="Vanilla Coffee" width={350} />
-      <SCardFooter>CARD COMPONENT</SCardFooter>
+      <SCardImage src={imageSrc} alt={imageAlt} width={350} />
+      <SCardHeartBanner>
+        <button>
+          <img src={heartIcon} alt="Heart Banner" width={24} />
+        </button>
+      </SCardHeartBanner>
+      <SCardFooter>
+        <span>{productName}</span>
+        <span>{price}</span>
+        <button onClick={onAddToCart}>
+          <img src={cartIcon} alt="Add to cart" width={24} />
+        </button>
+      </SCardFooter>
     </SCardWrapper>
   );
 };
