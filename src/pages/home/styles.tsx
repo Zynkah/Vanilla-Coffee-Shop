@@ -15,7 +15,7 @@ export const SHeroWrapper = styled.div`
   }
   h2 {
     font-family: "Dancing Script", cursive;
-    color: var(--grey);
+    color: var(--red);
   }
 
   p {

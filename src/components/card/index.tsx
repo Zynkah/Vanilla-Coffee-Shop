@@ -13,6 +13,7 @@ interface CardProps {
   productName: string;
   price: string;
   onAddToCart?: () => void;
+  onAddToFavorites?: () => void;
 }
 
 export const Card = ({
@@ -21,19 +22,24 @@ export const Card = ({
   productName,
   price,
   onAddToCart,
+  onAddToFavorites,
 }: CardProps) => {
   return (
     <SCardWrapper>
       <SCardImage src={imageSrc} alt={imageAlt} width={350} />
       <SCardHeartBanner>
-        <button type="button" aria-label="Add to favorites">
+        <button
+          type="button"
+          aria-label="Add to favorites"
+          onClick={onAddToFavorites}
+        >
           <img src={heartIcon} alt="Heart Banner" width={24} />
         </button>
       </SCardHeartBanner>
       <SCardFooter>
         <span>{productName}</span>
         <span>{price}</span>
-        <button onClick={onAddToCart}>
+        <button type="button" aria-label="Add to cart" onClick={onAddToCart}>
           <img src={cartIcon} alt="Add to cart" width={24} />
         </button>
       </SCardFooter>

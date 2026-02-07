@@ -15,3 +15,8 @@ export const SNav = styled.nav`
   &:hover a {
   cursor: pointer;
 `;
+
+export const SNavUserLinks = styled.div`
+  display: flex;
+  gap: 32px;
+`;

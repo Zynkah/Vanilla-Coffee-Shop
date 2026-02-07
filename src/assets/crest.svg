@@ -1,0 +1,64 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Shield -->
+  <path d="M150 120 H650 V520
+           C650 650 400 740 400 740
+           C400 740 150 650 150 520 Z"
+        fill="#efe8dc"
+        stroke="#2a2420"
+        stroke-width="10"/>
+
+  <!-- Dividers -->
+  <line x1="400" y1="120" x2="400" y2="740"
+        stroke="#2a2420" stroke-width="8"/>
+  <line x1="150" y1="320" x2="650" y2="320"
+        stroke="#2a2420" stroke-width="8"/>
+
+  <!-- Coffee Beans (Top Left) -->
+  <g transform="translate(240 220)" fill="#5a3a24" stroke="#2a2420" stroke-width="4">
+    <ellipse cx="0" cy="0" rx="30" ry="50"/>
+    <line x1="0" y1="-45" x2="0" y2="45"/>
+    <ellipse cx="70" cy="20" rx="30" ry="50"/>
+    <line x1="70" y1="-25" x2="70" y2="65"/>
+  </g>
+
+  <!-- Vanilla Bean (Top Right – FIXED & VINTAGE) -->
+  <g transform="translate(470 100)"
+     stroke="#2a2420" stroke-width="6" fill="none">
+    <path d="M20 50
+             C80 80 40 200 100 200"/>
+    <!-- Vanilla seeds -->
+    <circle cx="55" cy="90" r="3" fill="#2a2420"/>
+    <circle cx="60" cy="115" r="3" fill="#2a2420"/>
+    <circle cx="65" cy="140" r="3" fill="#2a2420"/>
+    <circle cx="70" cy="165" r="3" fill="#2a2420"/>
+  </g>
+
+  <!-- Ship (Bottom Left – Heraldic) -->
+  <g transform="translate(230 400)"
+     fill="#3b3b3b" stroke="#2a2420" stroke-width="5">
+    <!-- Hull -->
+    <path d="M0 90 H160 L130 130 H30 Z"/>
+    <!-- Mast -->
+    <rect x="75" y="10" width="10" height="80"/>
+    <!-- Sail -->
+    <path d="M85 20 C140 40 140 90 85 100 Z"
+          fill="#d8d1c5"/>
+    <!-- Water line -->
+    <line x1="0" y1="130" x2="160" y2="130"/>
+  </g>
+
+  <!-- Pineapple (Bottom Right – Engraved Style) -->
+  <g transform="translate(470 420)"
+     stroke="#2a2420" stroke-width="4">
+    <!-- Body -->
+    <ellipse cx="70" cy="95" rx="45" ry="60" fill="#d9a21b"/>
+    <!-- Cross hatch -->
+    <line x1="30" y1="70" x2="110" y2="120"/>
+    <line x1="110" y1="70" x2="30" y2="120"/>
+    <!-- Crown -->
+    <path d="M40 35 L70 0 L100 35" fill="none"/>
+    <path d="M30 45 L70 15 L110 45" fill="none"/>
+  </g>
+
+</svg>

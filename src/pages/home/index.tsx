@@ -1,28 +1,13 @@
-import { Card } from "../../components/card";
+import { ProductSection } from "../../components/productSection";
 import { FeaturedItemsData } from "../../data/featuredItemsData";
-import { useAddToCart } from "../../hooks/useAddToCart";
-import { SPageWrapper, SProductsWrapper } from "../../styles";
+import { SPageWrapper} from "../../styles";
 import { Hero } from "./hero";
 
 export const Home = () => {
-  const { handleAddToCart } = useAddToCart();
-
   return (
     <SPageWrapper>
       <Hero />
-      <h2>Featured Products</h2>
-      <SProductsWrapper>
-        {FeaturedItemsData.map((item) => (
-          <Card
-            key={item.id}
-            imageSrc={item.imageSrc}
-            imageAlt={item.imageAlt}
-            productName={item.productName}
-            price={item.price}
-            onAddToCart={() => handleAddToCart(item)}
-          />
-        ))}
-      </SProductsWrapper>
+      <ProductSection title="Featured Products" products={FeaturedItemsData} />
     </SPageWrapper>
   );
 };

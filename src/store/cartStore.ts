@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-interface CartItem {
+export interface MenuItem {
   id: number;
   imageSrc: string;
   imageAlt: string;
@@ -9,8 +9,8 @@ interface CartItem {
 }
 
 interface CartStore {
-  cartItems: CartItem[];
-  addToCart: (item: CartItem) => void;
+  cartItems: MenuItem[];
+  addToCart: (item: MenuItem) => void;
   clearCart: () => void;
 }
 
