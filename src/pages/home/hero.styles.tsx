@@ -9,13 +9,12 @@ export const SHeroWrapper = styled.div`
   width: 100%;
 
   h1 {
-    font-family: "Cormorant Garamond, serif";
+    font-family: "Cormorant Garamond", serif;
     color: var(--brown);
     text-shadow: 1px 1px 0 #fff8e1;
   }
-
   h2 {
-    font-family: "Dancing Script, cursive";
+    font-family: "Dancing Script", cursive;
     color: var(--grey);
   }
 
@@ -47,7 +46,6 @@ export const SMapWrapper = styled.div`
   width: 100%;
   height: 300px;
   border-bottom: 1px solid var(--brown);
-  background-image: url("/map.jpg");
   background-size: cover;
   background-position: center;
   background-image:
