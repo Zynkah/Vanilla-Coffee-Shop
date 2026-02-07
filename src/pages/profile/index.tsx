@@ -3,13 +3,12 @@ import { useFavStore } from "../../store/favStore";
 import { SPageWrapper } from "../../styles";
 
 export const ProfilePage = () => {
-    const favItems = useFavStore((state: any) => state.favItems);
-    console.log("Fav Items in ProfilePage:", favItems);
-    
+  const favItems = useFavStore((state: any) => state.favItems);
+
   return (
     <SPageWrapper>
       {/* <ProductSection title="Your Past Orders" products={[]} /> */}
-      <ProductSection title="Your Favorites"  products={favItems} />
+      <ProductSection title="Your Favorites" products={favItems} />
     </SPageWrapper>
   );
 };

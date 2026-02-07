@@ -13,7 +13,8 @@ export const SNav = styled.nav`
   height: 100%;
 
   &:hover a {
-  cursor: pointer;
+    cursor: pointer;
+  }
 `;
 
 export const SNavUserLinks = styled.div`

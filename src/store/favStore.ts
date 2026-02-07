@@ -10,6 +10,10 @@ interface FavStore {
 export const useFavStore = create<FavStore>((set) => ({
   favItems: [],
   addToFavs: (item: MenuItem) =>
-    set((state) => ({ favItems: [...state.favItems, item] })),
+    set((state) => {
+      const exists = state.favItems.some((fav) => fav.id === item.id);
+      if (exists) return state;
+      return { favItems: [...state.favItems, item] };
+    }),
   clearFavs: () => set({ favItems: [] }),
 }));
