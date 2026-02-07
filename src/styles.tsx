@@ -5,6 +5,14 @@ export const SPageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100svh;
+
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const SProductsWrapper = styled.div`
@@ -14,7 +22,7 @@ export const SProductsWrapper = styled.div`
 `;
 
 export const SSectionTitle = styled.h2`
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   color: var(--brown);
   display: inline-block;
   padding: 0 12px;
