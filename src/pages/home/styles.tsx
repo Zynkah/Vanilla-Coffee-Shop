@@ -44,7 +44,7 @@ export const SHeroContent = styled.div`
 
 export const SMapWrapper = styled.div`
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   border-bottom: 1px solid var(--brown);
   background-size: cover;
   background-position: center;
