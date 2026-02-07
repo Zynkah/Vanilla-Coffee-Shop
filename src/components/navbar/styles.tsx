@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SNavbarWrapper = styled.div`
-  position: fixed;
+  position: absoulte;
   top: 0;
   left: 0;
   width: 100svw;

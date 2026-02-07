@@ -1,11 +1,12 @@
 import { useCartStore } from "../../store/cartStore";
+import { SPageWrapper } from "../../styles";
 
 export const CartPage = () => {
   const cartItems = useCartStore((state) => state.cartItems);
 
   return (
-    <div>
-      <h1>CART PAGE</h1>
+    <SPageWrapper>
+      <h1>YOUR CART</h1>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
@@ -18,6 +19,6 @@ export const CartPage = () => {
           ))}
         </ul>
       )}
-    </div>
+    </SPageWrapper>
   );
 };

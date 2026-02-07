@@ -5,10 +5,10 @@ import { RouteList } from "./Routes";
 
 function App() {
   return (
-    <>
+    <div style={{display: 'flex', flexDirection: 'column', position: 'relative'}}>
       <Navbar />
       <RouteList />
-    </>
+    </div>
   );
 }
 

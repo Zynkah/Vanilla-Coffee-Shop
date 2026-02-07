@@ -4,7 +4,6 @@ export const SPageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 `;
 
 export const SProductsWrapper = styled.div`
