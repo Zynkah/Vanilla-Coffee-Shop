@@ -12,7 +12,7 @@ export const Navbar = () => {
         <NavLink to="/about">ABOUT</NavLink>
         <NavLink to="/contact">CONTACT</NavLink>
         <NavLink to="/cart">
-          <img src={cartIcon} alt="Add to cart" width={24} />
+          <img src={cartIcon} alt="Shopping cart" width={24} />
         </NavLink>
       </SNav>
     </SNavbarWrapper>

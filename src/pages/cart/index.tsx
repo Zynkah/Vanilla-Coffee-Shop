@@ -10,8 +10,8 @@ export const CartPage = () => {
         <p>Your cart is empty.</p>
       ) : (
         <ul>
-          {cartItems.map((item, idx) => (
-            <li key={idx}>
+          {cartItems.map((item) => (
+            <li key={item.id}>
               <img src={item.imageSrc} alt={item.imageAlt} width={50} />
               <span>{item.productName}</span> - <span>{item.price}</span>
             </li>

@@ -45,13 +45,16 @@ export const SCardHeartBanner = styled.div`
     cursor: pointer;
     transition: transform 0.2s ease;
 
-
     &:hover {
       transform: rotate(-45deg) scale(1.1);
-  }
-}
-`;
+    }
 
+    &:focus-visible {
+      transform: rotate(-45deg) scale(1.1);
+      outline: 2px solid var(--darkGrey);
+    }
+  }
+`;
 
 export const SCardFooter = styled.div`
   width: -webkit-fill-available;
@@ -70,6 +73,11 @@ export const SCardFooter = styled.div`
 
     &:hover {
       transform: scale(1.1);
+    }
+
+    &:focus-visible {
+      transform: scale(1.1);
+      outline: 2px solid var(--darkGrey);
     }
   }
 `;

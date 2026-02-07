@@ -26,7 +26,7 @@ export const Card = ({
     <SCardWrapper>
       <SCardImage src={imageSrc} alt={imageAlt} width={350} />
       <SCardHeartBanner>
-        <button>
+        <button type="button" aria-label="Add to favorites">
           <img src={heartIcon} alt="Heart Banner" width={24} />
         </button>
       </SCardHeartBanner>

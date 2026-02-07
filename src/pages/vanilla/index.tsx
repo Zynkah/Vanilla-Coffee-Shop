@@ -1,14 +1,11 @@
 import { Card } from "../../components/card";
 import { SPageWrapper, SProductsWrapper } from "../../styles";
 import { VanillaData } from "../../data/vanillaData";
-import { useCartStore } from "../../store/cartStore";
+import { useAddToCart } from "../../hooks/useAddToCart";
 
 export const VanillaPage = () => {
-  const addToCart = useCartStore((state) => state.addToCart);
-
-  const handleAddToCart = (item: any) => {
-    addToCart(item);
-  };
+   const { handleAddToCart } = useAddToCart();
+ 
 
   return (
     <SPageWrapper>

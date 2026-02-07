@@ -1,7 +1,7 @@
-import { useCartStore } from "../../store/cartStore";
 import { Card } from "../../components/card";
 import { CoffeeData } from "../../data/coffeeData";
 import { SPageWrapper, SProductsWrapper } from "../../styles";
+import { useAddToCart } from "../../hooks/useAddToCart";
 
 export interface MenuItem {
   id: number;
@@ -12,11 +12,7 @@ export interface MenuItem {
 }
 
 export const CoffeePage = () => {
-  const addToCart = useCartStore((state) => state.addToCart);
-
-  const handleAddToCart = (item: MenuItem) => {
-    addToCart(item);
-  };
+  const { handleAddToCart } = useAddToCart();
 
   return (
     <SPageWrapper>
