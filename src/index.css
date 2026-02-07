@@ -14,12 +14,20 @@
 
   --brown: #7f7166;
   --darkBrown: #53463c;
-  --beige: 	#F9ECD6;
+  --beige: #f9ecd6;
   /* --beige: #ffeede; */
   --tan: #ad9674;
   --red: #6a1d13;
   --grey: #5e5d5d;
   --darkGrey: #2d2d2d;
+
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 a {
